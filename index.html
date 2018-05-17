@@ -40,7 +40,7 @@ http://www.templatemo.com/tm-475-holiday
 						<ul>
 							<li><a href="index.html" class="active">Beranda</a></li>
 							<li><a href="contact.html">Booking</a></li>
-							<li><a href="contact.html">Contact</a></li>
+							<li><a href="about.html">About</a></li>
 							<li><a href="about.html" >FAQ</a></li>
 						</ul>
 					</nav>		
@@ -56,27 +56,23 @@ http://www.templatemo.com/tm-475-holiday
 		  <ul class="slides">
 		    <li>
 			    <div class="tm-banner-inner">
-					<h1 class="tm-banner-title">Find <span class="tm-yellow-text">The Best</span> Place</h1>
-					<p class="tm-banner-subtitle">Like Your Hometown</p>
-					<a href="#more" class="tm-banner-link">Learn More</a>	
+					<h2 class="tm-banner-title">Wisma Tamu<span class="tm-yellow-text">ITS</span></h2>	
 				</div>
-				<img src="img/wisma1.jpg" alt="Image" />	
+				<img src="img/wisma1_2.jpg" alt="Image" weight=1920px height=665px />	
 		    </li>
 		    <li>
 			    <div class="tm-banner-inner">
-					<h1 class="tm-banner-title">Sweet <span class="tm-yellow-text">Home</span> Dolor</h1>
-					<p class="tm-banner-subtitle">Wonderful Destinations</p>
-					<a href="#more" class="tm-banner-link">Learn More</a>	
+					<h2 class="tm-banner-title">Wisma <span class="tm-yellow-text">Tamu ITS</span></h2>
+				
 				</div>
-		      <img src="img/wisma2.jpg" alt="Image" />
+		      <img src="img/wisma6.jpg" alt="Image" weight=1920px height=665px />
 		    </li>
 		    <li>
 			    <div class="tm-banner-inner">
-					<h1 class="tm-banner-title">The <span class="tm-yellow-text">Best</span> Place</h1>
-					<p class="tm-banner-subtitle">For Your Family</p>
-					<a href="#more" class="tm-banner-link">Learn More</a>	
+					<h3 class="tm-banner-title">The <span class="tm-yellow-text">Best</span> Place</h3>
+					<p class="tm-banner-subtitle">For Your Visit</p>	
 				</div>
-		      <img src="img/wisma3.jpg" alt="Image" />
+		      <img src="img/wisma7.jpg" alt="Image" weight=1920px height=665px />
 		    </li>
 		  </ul>
 		</div>	
@@ -93,7 +89,7 @@ http://www.templatemo.com/tm-475-holiday
 					    	<a href="#hotel" aria-controls="hotel" role="tab" data-toggle="tab">Ketersediaan</a>
 					    </li>
 					    <li role="presentation">
-					    	<a href="#car" aria-controls="car" role="tab" data-toggle="tab">Kamar</a>
+					    	<a href="#car" aria-controls="car" role="tab" data-toggle="tab">Cek Booking</a>
 					    </li>
 					</ul>
 
@@ -101,7 +97,7 @@ http://www.templatemo.com/tm-475-holiday
 					<div class="tab-content">
 					    <div role="tabpanel" class="tab-pane fade in active tm-white-bg" id="hotel">
 					    	<div class="tm-search-box effect2">
-								<form action="#" method="post" class="hotel-search-form">
+								<form method="post" class="hotel-search-form">
 									<div class="tm-form-inner">
 							          	<div class="form-group">
 							                <div class='input-group date' id='datetimepicker1'>
@@ -131,18 +127,92 @@ http://www.templatemo.com/tm-475-holiday
 							            </div>
 									</div>							
 						            <div class="form-group tm-yellow-gradient-bg text-center">
-						            	<button type="submit" name="submit" class="tm-yellow-btn">Check Now</button>
-						            </div>  
+						            	
+						            	<button type="button" name="submit" data-toggle="modal" data-target="#myModal" class="tm-yellow-btn">Check Now</button>
+
+						           
+						            </div>
+						             	<div id="myModal" class="modal fade" tabindex="-1" role="dialog">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" >&times;</button>
+                                   </div>
+                                        <div class="modal-body">
+                                            <h4>Tersedia <b>11 Kamar Kosong</b></h4><br><p>Terdiri dari: <b>9 kamar TwinBed</b> dan <b>2 kamar SingleBed</b></p>
+                                        </div>
+                                        <div class="modal-footer">
+                                        	<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                        	<form>
+											<input type="button" value="Booking Now" onclick="window.location.href='contact.html'" class="btn btn-info waves-effect" data-dismiss="modal"/>
+											</form>
+                                            
+                                        </div>
+                                    </div>
+                                    <!-- /.modal-content -->
+                                </div>
+                                <!-- /.modal-dialog -->
+                            </div>
+
+						            
 								</form>
 							</div>
-					    </div>				    
+					    </div>
+					    	<div role="tabpanel" class="tab-pane fade tm-white-bg" id="car">
+					    		<div class="tm-search-box effect2">
+									<form class="hotel-search-form">
+
+										<div class="tm-form-inner">
+											<div class="form-group margin-bottom-0">
+							               <label for="recipient-name" class="control-label">Kode Booking:</label>
+                                                    <input type="text" class="form-control" id="recipient-name"> 
+							            </div>
+							          		<div class="form-group">
+							                	<div class='input-group date' id='datetimepicker3'>
+							                    <input type='text' class="form-control" placeholder="Check-in Date" />
+							                    <span class="input-group-addon">
+							                        <span class="fa fa-calendar"></span>
+							                    </span>
+							                </div>
+							            </div>
+									</div>	
+
+						            <div class="form-group tm-yellow-gradient-bg text-center">
+						            <button type="button" name="submit" data-toggle="modal" data-target="#myModal2" class="tm-yellow-btn">Check Now</button>
+
+						            	<div id="myModal2" class="modal fade" tabindex="-1" role="dialog">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            </div>
+                                        <div class="modal-body">
+                                            <p>Kode Booking Anda: <h4><b>E5432WE</b></h4><br>
+                                            	Check-in date: 05/20/2018<br>Sisa Pembayaran: <h4><b>Rp 270k</b></h4></p>
+                                        </div>
+                                        <div class="modal-footer">
+                                        	<form>
+                                        		<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+											
+											</form>
+                                            
+                                        </div>
+                                    </div>
+                                    <!-- /.modal-content -->
+                                </div>
+                                <!-- /.modal-dialog -->
+                            </div>
+						            </div>  
+									</form>
+								</div>
+					    	</div>							    
 					</div>
 				</div>								
 			</div>
 
 			<div class="col-lg-4 col-md-4 col-sm-6">
 				<div class="tm-home-box-1 tm-home-box-1-2 tm-home-box-1-center">
-					<img src="img/singlebed2.jpg" alt="image" class="img-responsive">
+					<img src="img/single.jpg" alt="image" class="img-responsive">
 					<a href="#">
 						<div class="tm-green-gradient-bg tm-city-price-container">
 							<span>Single Bed</span>
@@ -175,7 +245,7 @@ http://www.templatemo.com/tm-475-holiday
 			<div class="row">
 				<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 col-xxs-12">
 					<div class="tm-home-box-2">						
-						<img src="img/index-03.jpg" alt="image" class="img-responsive">
+						<img src="img/mushollarz.jpg" alt="image" class="img-responsive">
 						<h3>Mushola</h3>
 						<div class="tm-home-box-2-container">
 							<a href="#" class="tm-home-box-2-link"><i class="fa fa-heart tm-home-box-2-icon border-right"></i></a>
@@ -186,7 +256,7 @@ http://www.templatemo.com/tm-475-holiday
 				</div>
 				<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 col-xxs-12">
 					<div class="tm-home-box-2">						
-					    <img src="img/index-04.jpg" alt="image" class="img-responsive">
+					    <img src="img/makanrz.jpg" alt="image" class="img-responsive">
 						<h3>Ruang Makan</h3>
 						<div class="tm-home-box-2-container">
 							<a href="#" class="tm-home-box-2-link"><i class="fa fa-heart tm-home-box-2-icon border-right"></i></a>
@@ -197,8 +267,8 @@ http://www.templatemo.com/tm-475-holiday
 				</div>
 				<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 col-xxs-12">
 					<div class="tm-home-box-2">						
-					    <img src="img/index-05.jpg" alt="image" class="img-responsive">
-						<h3>Kantin</h3>
+					    <img src="img/minumrz.jpg" alt="image" class="img-responsive">
+						<h3>Free Minuman</h3>
 						<div class="tm-home-box-2-container">
 							<a href="#" class="tm-home-box-2-link"><i class="fa fa-heart tm-home-box-2-icon border-right"></i></a>
 							<a href="#" class="tm-home-box-2-link"><span class="tm-home-box-2-description">Wisma Tamu ITS</span></a>
@@ -208,7 +278,7 @@ http://www.templatemo.com/tm-475-holiday
 				</div>
 				<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 col-xxs-12">
 					<div class="tm-home-box-2 tm-home-box-2-right">						
-					    <img src="img/index-06.jpg" alt="image" class="img-responsive">
+					    <img src="img/parkirrz.jpg" alt="image" class="img-responsive">
 						<h3>Parkir Luas</h3>
 						<div class="tm-home-box-2-container">
 							<a href="#" class="tm-home-box-2-link"><i class="fa fa-heart tm-home-box-2-icon border-right"></i></a>
@@ -235,7 +305,7 @@ http://www.templatemo.com/tm-475-holiday
 			<div class="row">
 				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
 					<div class="tm-tours-box-1">
-						<img src="img/tours-03.jpg" alt="image" class="img-responsive">
+						<img src="img/singlerz.jpg" alt="image" class="img-responsive">
 						<div class="tm-tours-box-1-info">
 							<div class="tm-tours-box-1-info-left">
 								<p class="text-uppercase margin-bottom-20">Single Bed</p>	
@@ -265,7 +335,7 @@ http://www.templatemo.com/tm-475-holiday
 				</div>
 				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
 					<div class="tm-tours-box-1">
-						<img src="img/tours-03.jpg" alt="image" class="img-responsive">
+						<img src="img/singlebed2rz.jpg" alt="image" class="img-responsive">
 						<div class="tm-tours-box-1-info">
 							<div class="tm-tours-box-1-info-left">
 								<p class="text-uppercase margin-bottom-20">Single Bed</p>	
@@ -300,9 +370,9 @@ http://www.templatemo.com/tm-475-holiday
 	<footer class="tm-black-bg">
 		<div class="container">
 			<div class="row">
-				<p class="tm-copyright-text">Copyright &copy; 2084 Your Company Name 
+				<p class="tm-copyright-text">Copyright &copy; 2018 Wisma Tamu ITS 
                 
-                | Designed by <a rel="nofollow" href="http://www.templatemo.com" target="_parent">templatemo</a></p>
+                | Designed by <a rel="nofollow" href="http://www.templatemo.com" target="_parent">RK_A_team</a></p>
 			</div>
 		</div>		
 	</footer>
